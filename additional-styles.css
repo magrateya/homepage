@@ -66,6 +66,43 @@ li.details > input {
   font-size: 1rem;
   margin: 0 0.25em 0 0.25em;
 }
-.avatar-wrapper {
-  background-image: url(img/Ryu.png);
+.avatar-img {
+  max-width: 200px;
+}
+.details.publications > input::after {
+  content: "📘";
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.details.publications > input:checked {
+  transform: rotate(0deg);
+}
+.details.publications > input:checked::after {
+  content: "📖";
+}
+.achivements ul > li {
+  list-style-type: "💪";
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+.phone svg {
+  margin-right: 0.2em;
+}
+.three.wide.center.aligned.column {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .avatar-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 }
