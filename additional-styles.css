@@ -4,22 +4,6 @@ li.details > input {
 [data-tag="work"] > *:first-child::after {
   content: "film";
 }
-[data-tag] > *:first-child::after {
-  font-size: 0.6em;
-  line-height: 1rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 0 0.75em;
-  border-radius: 15px;
-  height: 1rem;
-  margin-left: 0.5em;
-  margin-top: -1px;
-  vertical-align: middle;
-  box-shadow: inset 0 0 0 1px;
-  opacity: 0.5;
-  transition: opacity 0.2s linear;
-}
 [data-tag]:hover > *:first-child::after {
   color: #fff;
   opacity: 1;
