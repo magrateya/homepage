@@ -21,7 +21,7 @@ li.details > input {
   transition: opacity 0.2s linear;
 }
 [data-tag]:hover > *:first-child:after {
-  color: #ffffff;
+  color: #fff;
   opacity: 1;
   box-shadow: none;
 }
@@ -48,7 +48,7 @@ li.details > input {
   transition: opacity 0.2s linear;
 }
 [data-tag]:hover > *:first-child:after {
-  color: #ffffff;
+  color: #fff;
   opacity: 1;
   box-shadow: none;
 }
