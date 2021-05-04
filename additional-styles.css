@@ -66,6 +66,33 @@ li.details > input {
   font-size: 1rem;
   margin: 0 0.25em 0 0.25em;
 }
-.avatar-wrapper {
-  background-image: url(img/Ryu.png);
+.avatar-img {
+  max-width: 200px;
+}
+.details.publications > input::after {
+  content: "📘";
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.details.publications > input:checked {
+  transform: rotate(0deg);
+}
+.details.publications > input:checked::after {
+  content: "📖";
+}
+.achivements ul > li {
+  list-style-type: "💪";
+}
+.twitter,
+.insta {
+  display: flex;
+  align-items: center;
+}
+.twitter svg,
+.insta svg {
+  margin-right: 0.2em;
 }
