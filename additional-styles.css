@@ -2,9 +2,8 @@ li.details > input {
   margin-left: 0;
 }
 [data-tag="work"] > *:first-child::after {
-  content: "film";
+  content: "game";
 }
-
 [data-tag="work"]:hover > *:first-child::after {
   background: midnightblue;
 }
@@ -78,5 +77,6 @@ li.details > input {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    width: 100%;
   }
 }
