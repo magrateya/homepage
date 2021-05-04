@@ -1,16 +1,16 @@
 li.details > input {
   margin-left: 0;
 }
-[data-tag="work"] > *:first-child:after {
+[data-tag="work"] > *:first-child::after {
   content: "film";
 }
-[data-tag] > *:first-child:after {
+[data-tag] > *:first-child::after {
   font-size: 0.6em;
   line-height: 1rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   display: inline-block;
-  padding: 0em 0.75em;
+  padding: 0 0.75em;
   border-radius: 15px;
   height: 1rem;
   margin-left: 0.5em;
@@ -20,24 +20,24 @@ li.details > input {
   opacity: 0.5;
   transition: opacity 0.2s linear;
 }
-[data-tag]:hover > *:first-child:after {
+[data-tag]:hover > *:first-child::after {
   color: #fff;
   opacity: 1;
   box-shadow: none;
 }
-[data-tag="work"]:hover > *:first-child:after {
+[data-tag="work"]:hover > *:first-child::after {
   background: midnightblue;
 }
-[data-tag="action"] > *:first-child:after {
+[data-tag="action"] > *:first-child::after {
   content: "action";
 }
-[data-tag] > *:first-child:after {
+[data-tag] > *:first-child::after {
   font-size: 0.6em;
   line-height: 1rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   display: inline-block;
-  padding: 0em 0.75em;
+  padding: 0 0.75em;
   border-radius: 15px;
   height: 1rem;
   margin-left: 0.5em;
@@ -47,22 +47,21 @@ li.details > input {
   opacity: 0.5;
   transition: opacity 0.2s linear;
 }
-[data-tag]:hover > *:first-child:after {
+[data-tag]:hover > *:first-child::after {
   color: #fff;
   opacity: 1;
   box-shadow: none;
 }
-[data-tag="action"]:hover > *:first-child:after {
+[data-tag="action"]:hover > *:first-child::after {
   background: rgb(0, 221, 255);
 }
 .achivements {
   background: rgba(0, 0, 0, 0.04);
   border-radius: 4px;
 }
-.tags.small .nowrap:not(:last-child):after {
+.tags.small .nowrap:not(:last-child)::after {
   content: "●";
   display: inline-block;
-  font-family: "Arial";
   font-size: 1rem;
   margin: 0 0.25em 0 0.25em;
 }
@@ -86,11 +85,6 @@ li.details > input {
 }
 .achivements ul > li {
   list-style-type: "💪";
-}
-
-.phone {
-  display: flex;
-  align-items: center;
 }
 .phone svg {
   margin-right: 0.2em;
