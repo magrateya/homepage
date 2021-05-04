@@ -87,12 +87,22 @@ li.details > input {
 .achivements ul > li {
   list-style-type: "💪";
 }
-.twitter,
-.insta {
+
+.phone {
   display: flex;
   align-items: center;
 }
-.twitter svg,
-.insta svg {
+.phone svg {
   margin-right: 0.2em;
+}
+.three.wide.center.aligned.column {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .avatar-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 }
