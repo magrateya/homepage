@@ -4,11 +4,7 @@ li.details > input {
 [data-tag="work"] > *:first-child::after {
   content: "film";
 }
-[data-tag]:hover > *:first-child::after {
-  color: #fff;
-  opacity: 1;
-  box-shadow: none;
-}
+
 [data-tag="work"]:hover > *:first-child::after {
   background: midnightblue;
 }
